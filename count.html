@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            background-color: orangered;
+            padding:20px;
+        }
+        button:hover{
+            background-color: green;
+            box-shadow: 3px 3px 3px white;
+        }
+       h1{
+        color:rgb(224, 13, 161);
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="count">
+            <h1>COUNTER TASK</h1>
+            <button onclick="increse()"> Click Me</button>
+            <h2 id ="countoutput"> </h2>
+        </div>
+    </div>
+    <script>
+        let count=0;
+        function increse()
+        {
+          count++;
+          document.getElementById("countoutput").innerHTML= " Increase the count by one : " +count;
+        }
+    </script>
+    </body>
+</html>
